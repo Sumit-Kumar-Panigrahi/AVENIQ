@@ -1,0 +1,8 @@
+node_modules/
+dist/
+build/
+coverage/
+.prisma/
+client/dist/
+server/dist/
+

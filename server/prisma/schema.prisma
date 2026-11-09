@@ -1,0 +1,16 @@
+// Aveniq - Prisma Schema Definition
+// Production PostgreSQL Configuration
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Note: Complete business domain models (Tenants, Users, Roles, Tickets,
+// Incidents, AuditLogs, SLAs) will be introduced in subsequent phases.
+// Phase 1 establishes the connection interface and schema baseline.
+
